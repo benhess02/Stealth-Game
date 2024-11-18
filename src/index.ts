@@ -130,14 +130,14 @@ function draw() {
 
     ctx.lineWidth = 5;
     for(let i = 0; i < KEYS.length; i++) {
-        if(KEYS[i].playerPossible) {
-            ctx.fillStyle = "green";
-            ctx.fillRect(
-                KEYS[i].x - (KEY_SIZE - KEY_PADDING) / 2,
-                KEYS[i].y - (KEY_SIZE - KEY_PADDING) / 2,
-                KEY_SIZE - KEY_PADDING, KEY_SIZE - KEY_PADDING
-            );
-        }
+        // if(KEYS[i].playerPossible) {
+        //     ctx.fillStyle = "green";
+        //     ctx.fillRect(
+        //         KEYS[i].x - (KEY_SIZE - KEY_PADDING) / 2,
+        //         KEYS[i].y - (KEY_SIZE - KEY_PADDING) / 2,
+        //         KEY_SIZE - KEY_PADDING, KEY_SIZE - KEY_PADDING
+        //     );
+        // }
 
         if(KEYS[i] == primaryKey) {
             ctx.strokeStyle = "blue";
